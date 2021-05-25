@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MobileAppDevPA</string>
+    <string name ="spinner_title">MobileAppDevPA</string>
+    <string name ="notify">Notify</string>
+    <string name ="delete">Delete</string>
+
+    <string name ="share">Share Notes</string>
+</resources>
