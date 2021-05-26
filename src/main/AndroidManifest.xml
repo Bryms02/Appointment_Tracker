@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobileappdevpa">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Student Term Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileAppDevPA">
+        <receiver
+            android:name=".UI.MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity
+            android:name=".UI.TermDetailsActivity"
+            android:label="Term Details"
+            android:parentActivityName=".UI.TermsActivity" />
+        <activity
+            android:name=".UI.AssessmentActivity"
+            android:label="Assessment"
+            android:parentActivityName=".UI.CourseActivity" />
+        <activity
+            android:name=".UI.CourseActivity"
+            android:label="Course"
+            android:parentActivityName=".UI.TermDetailsActivity" />
+        <activity
+            android:name=".UI.TermsActivity"
+            android:label="Terms"
+            android:parentActivityName=".UI.MainActivity" />
+        <activity android:name=".UI.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
